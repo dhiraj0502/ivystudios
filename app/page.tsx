@@ -405,36 +405,73 @@ export default function Home() {
       {/* CTA */}
 
       <section
-        id="contact"
-        className="py-24 md:py-32 text-center"
-      >
-        <div className="max-w-4xl mx-auto px-6 md:px-8">
+  id="contact"
+  className="py-24 md:py-32 text-center"
+>
+  <div className="max-w-4xl mx-auto px-6 md:px-8">
 
-          <h2
-            className="playfair"
-            style={{
-              fontSize: "clamp(2.5rem,6vw,4rem)",
-            }}
-          >
-            Experience Beauty Without Compromise
-          </h2>
+    <h2
+      className="playfair"
+      style={{
+        fontSize: "clamp(2.5rem,6vw,4rem)",
+      }}
+    >
+      Experience Beauty Without Compromise
+    </h2>
 
-          <p className="mt-8 opacity-80">
-            Reserve your luxury salon experience today.
-          </p>
+    <p className="mt-8 opacity-80">
+      Reserve your luxury salon experience today.
+    </p>
 
-          <button
-            className="mt-10 px-10 py-5 transition-all duration-300 hover:scale-105"
-            style={{
-              background: "#c8a97e",
-              color: "#000",
-            }}
-          >
-            Book Your Appointment
-          </button>
+    <div className="mt-12 space-y-4 text-lg">
 
-        </div>
-      </section>
+      <p>
+        <span
+          style={{
+            color: "#c8a97e",
+          }}
+        >
+          Address
+        </span>
+        <br />
+        36 Faussagh Ave,
+        <br />
+        Cabra West,
+        <br />
+        Dublin 7
+      </p>
+
+      <p>
+        <span
+          style={{
+            color: "#c8a97e",
+          }}
+        >
+          Phone
+        </span>
+        <br />
+        <a
+          href="tel:018682038"
+          className="hover:underline"
+        >
+          (01) 868 2038
+        </a>
+      </p>
+
+    </div>
+
+    <button
+      className="mt-10 px-10 py-5 transition-all duration-300 hover:scale-105"
+      style={{
+        background: "#c8a97e",
+        color: "#000",
+      }}
+    >
+      Book Your Appointment
+    </button>
+
+  </div>
+</section>
 
       {/* FOOTER */}
 
