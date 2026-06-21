@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --black: #0a0a0a;
+  --cream: #f7f3ec;
+  --gold: #c8a97e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: var(--cream);
+  overflow-x: hidden;
+}
+
+.playfair {
+  font-family: var(--font-playfair);
+}
