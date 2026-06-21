@@ -125,7 +125,7 @@ export default function Home() {
         <img
           src="/images/hero.jpg"
           alt="Luxury Salon"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          className="hero-image absolute inset-0 w-full h-full object-cover opacity-30"
         />
 
         <div className="absolute inset-0 bg-black/70"></div>
