@@ -137,7 +137,7 @@ export default function Home() {
             <p
               className="uppercase tracking-[0.4em]"
               style={{
-                color: "#c8a97e",
+                color: "#d4a5a5",
               }}
             >
               Luxury Salon Experience
@@ -169,7 +169,7 @@ export default function Home() {
             <button
               className="mt-10 px-8 py-4 transition-all duration-300 hover:scale-105"
               style={{
-                background: "#c8a97e",
+                background: "#d4a5a5",
                 color: "#000",
               }}
             >
@@ -198,7 +198,7 @@ export default function Home() {
                 <h3
                   style={{
                     fontSize: "clamp(2.5rem,8vw,4rem)",
-                    color: "#c8a97e",
+                    color: "#d4a5a5",
                   }}
                 >
                   {item[0]}
@@ -226,7 +226,7 @@ export default function Home() {
 
           <p
             style={{
-              color: "#c8a97e",
+              color: "#d4a5a5",
               letterSpacing: "4px",
             }}
           >
@@ -337,7 +337,7 @@ export default function Home() {
                 <p
                   className="mt-6"
                   style={{
-                    color: "#c8a97e",
+                    color: "#d4a5a5",
                   }}
                 >
                   {review.name}
@@ -388,7 +388,7 @@ export default function Home() {
 
                 <p
                   style={{
-                    color: "#c8a97e",
+                    color: "#d4a5a5",
                   }}
                 >
                   {member.role}
@@ -428,7 +428,7 @@ export default function Home() {
       <p>
         <span
           style={{
-            color: "#c8a97e",
+            color: "#d4a5a5",
           }}
         >
           Address
@@ -444,7 +444,7 @@ export default function Home() {
       <p>
         <span
           style={{
-            color: "#c8a97e",
+            color: "#d4a5a5",
           }}
         >
           Phone
@@ -463,7 +463,7 @@ export default function Home() {
     <button
       className="mt-10 px-10 py-5 transition-all duration-300 hover:scale-105"
       style={{
-        background: "#c8a97e",
+        background: "#d4a5a5",
         color: "#000",
       }}
     >
@@ -484,7 +484,7 @@ export default function Home() {
         <h3
           className="playfair"
           style={{
-            color: "#c8a97e",
+            color: "#d4a5a5",
             letterSpacing: "4px",
           }}
         >
