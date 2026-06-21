@@ -1,6 +1,7 @@
 
 "use client";
-
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 
 export default function Home() {
@@ -68,7 +69,9 @@ export default function Home() {
       text: "Exceptional service from start to finish.",
     },
   ];
-
+const { ref, inView } = useInView({
+  triggerOnce: true,
+});
   return (
     <main
       style={{
@@ -182,35 +185,66 @@ export default function Home() {
 
       {/* STATS */}
 
-      <section className="py-20 md:py-24">
+<section
+  ref={ref}
+  className="py-20 md:py-24"
+>
+  <div className="max-w-7xl mx-auto px-6 md:px-8">
 
-        <div className="max-w-7xl mx-auto px-6 md:px-8">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+      <div>
+        <h3
+          style={{
+            fontSize: "clamp(2.5rem,8vw,4rem)",
+            color: "#d4a5a5",
+          }}
+        >
+          {inView && <CountUp end={15} duration={2} />}+
+        </h3>
+        <p>Years Experience</p>
+      </div>
 
-            {[
-              ["15+", "Years Experience"],
-              ["12K+", "Luxury Clients"],
-              ["4.9", "Average Rating"],
-              ["50+", "Industry Awards"],
-            ].map((item) => (
-              <div key={item[1]}>
-                <h3
-                  style={{
-                    fontSize: "clamp(2.5rem,8vw,4rem)",
-                    color: "#d4a5a5",
-                  }}
-                >
-                  {item[0]}
-                </h3>
+      <div>
+        <h3
+          style={{
+            fontSize: "clamp(2.5rem,8vw,4rem)",
+            color: "#d4a5a5",
+          }}
+        >
+          {inView && <CountUp end={12000} duration={2} />}+
+        </h3>
+        <p>Luxury Clients</p>
+      </div>
 
-                <p>{item[1]}</p>
-              </div>
-            ))}
-          </div>
+      <div>
+        <h3
+          style={{
+            fontSize: "clamp(2.5rem,8vw,4rem)",
+            color: "#d4a5a5",
+          }}
+        >
+          {inView && <CountUp end={4.9} decimals={1} duration={2} />}
+        </h3>
+        <p>Average Rating</p>
+      </div>
 
-        </div>
-      </section>
+      <div>
+        <h3
+          style={{
+            fontSize: "clamp(2.5rem,8vw,4rem)",
+            color: "#d4a5a5",
+          }}
+        >
+          {inView && <CountUp end={50} duration={2} />}+
+        </h3>
+        <p>Industry Awards</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* SERVICES */}
 
