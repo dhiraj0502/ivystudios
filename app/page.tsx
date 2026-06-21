@@ -507,6 +507,32 @@ const { ref, inView } = useInView({
   </div>
 </section>
 
+<section className="pb-24">
+
+  <div className="max-w-7xl mx-auto px-6 md:px-8">
+
+    <h2
+      className="playfair mb-10"
+      style={{
+        fontSize: "clamp(2.5rem,6vw,4rem)",
+      }}
+    >
+      Visit Us
+    </h2>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.6560638137976!2d-6.296312823411067!3d53.367309972295324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670dc5daf0088f%3A0x22dec55e88b800cf!2s36%20Faussagh%20Ave%2C%20Rear%2C%20Dublin%2C%20D07%20DX79!5e0!3m2!1sen!2sie!4v1782062796268!5m2!1sen!2sie"
+      width="100%"
+      height="450"
+      loading="lazy"
+      style={{
+        border: 0,
+      }}
+    />
+
+  </div>
+
+</section>
       {/* FOOTER */}
 
       <footer
